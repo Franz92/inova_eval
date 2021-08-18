@@ -3,7 +3,7 @@ import {postSubscribeChannel, postUnsubscribeChannel, publishChannel } from './c
 
 
 export const initRoutes = (app: Application) => {
-    app.post("/subscribe/:channel", postSubscribeChannel);
-    app.post("/unsubscribe/:channel", postUnsubscribeChannel);
-    app.post("/publish/:channel", publishChannel);
+    app.post("/subscribe/:channel*", postSubscribeChannel);
+    app.post("/unsubscribe/:channel*", postUnsubscribeChannel);
+    app.post("/publish/:channel*", publishChannel);
 } 
