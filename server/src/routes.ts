@@ -1,5 +1,5 @@
 import { Application } from 'express';
-import {postSubscribeChannel, postUnsubscribeChannel, publishChannel } from './channelEndpoint';
+import {postSubscribeChannel, postUnsubscribeChannel, publishChannel } from './services/channelEndpoint';
 
 
 export const initRoutes = (app: Application) => {
